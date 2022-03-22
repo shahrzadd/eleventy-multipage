@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/diegolbquintela/eleventy-multipage#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "axios": "^0.26.1"
   }
 }
