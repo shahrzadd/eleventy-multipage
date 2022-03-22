@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Random Film</li>
-        <li>Crime</li>
-        <li>Western</li>
-        <li>History</li>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <a href="/" class="navbar-list-item">
+          <li>Random Film</li>
+        </a>
+        <a href="/crime" class="navbar-list-item">
+          <li>Crime</li>
+        </a>
+        <a href="/western" class="navbar-list-item">
+          <li>Western</li>
+        </a>
+        <a href="/history" class="navbar-list-item">
+          <li>History</li>
+        </a>
+        
       </ul>
     </nav>
-    <h1>Pick your film...</h1>
-    {{ content | safe }}
+    <article class="content">
+      <h1>Pick your film...</h1>
+      {{ content | safe }}
+    </article>
   </body>
 </html>

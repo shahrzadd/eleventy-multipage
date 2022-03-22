@@ -1,13 +1,25 @@
 ---
-title: Built with Template
+title: The Film Picker
 layout: base.njk
 ---
-
-<h1>Hello <span class="name"></span></h1>
-<div id="img-container">
-  {% for film in data.historyFilms%}
-  <h3>{{film.title}}</h3>
+{% for film in data.historyFilms%}
+  <div id=history{{loop.index0}} class="hide">
+    <h3>{{film.title}}</h3>
     <img src=https://image.tmdb.org/t/p/w500/{{film.poster_path}}></img>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}
+
+{% for film in data.crimeFilms%}
+  <div id=crime{{loop.index0}} class="hide">
+    <h3>{{film.title}}</h3>
+    <img src=https://image.tmdb.org/t/p/w500/{{film.poster_path}}></img>
+  </div>
+{% endfor %}
+
+{% for film in data.westernFilms%}
+  <div id=western{{loop.index0}} class="hide">
+    <h3>{{film.title}}</h3>
+    <img src=https://image.tmdb.org/t/p/w500/{{film.poster_path}}></img>
+  </div>
+{% endfor %}
 <script src="/js/index.js"></script>

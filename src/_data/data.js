@@ -43,8 +43,6 @@ module.exports = async function () {
       filmData.crimeFilms.push(tempFilmObj);
     }
 
-    //console.log(filmData);
-
     return filmData;
   } catch (error) {
     console.log(error);
