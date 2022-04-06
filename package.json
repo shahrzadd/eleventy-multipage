@@ -8,17 +8,16 @@
     "start": "eleventy --serve"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/diegolbquintela/eleventy-multipage.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/diegolbquintela/eleventy-multipage/issues"
-  },
-  "homepage": "https://github.com/diegolbquintela/eleventy-multipage#readme",
+  "bugs": {},
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^2.0.0"
   }
 }

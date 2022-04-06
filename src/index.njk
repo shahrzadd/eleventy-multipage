@@ -1,25 +1,23 @@
 ---
-title: The Film Picker
+title: Home
 layout: base.njk
 ---
-{% for film in data.historyFilms%}
-  <div id=history{{loop.index0}} class="hide">
-    <h3>{{film.title}}</h3>
-    <img src=https://image.tmdb.org/t/p/w500/{{film.poster_path}}></img>
-  </div>
-{% endfor %}
+<div id="img-container"  class="main-container">
+  <h1>The Aesthetics Beauté</h1>
+  <img src="https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="main image">
 
-{% for film in data.crimeFilms%}
-  <div id=crime{{loop.index0}} class="hide">
-    <h3>{{film.title}}</h3>
-    <img src=https://image.tmdb.org/t/p/w500/{{film.poster_path}}></img>
-  </div>
-{% endfor %}
+</div>
 
-{% for film in data.westernFilms%}
-  <div id=western{{loop.index0}} class="hide">
-    <h3>{{film.title}}</h3>
-    <img src=https://image.tmdb.org/t/p/w500/{{film.poster_path}}></img>
-  </div>
-{% endfor %}
-<script src="/js/index.js"></script>
+<div class="blog-container">
+  <p>Nothing is more fun than self-care. 
+
+    
+  </p>
+  <p>
+    I started this blog to share my passion and knowledge about makeup, fragrances, and skin and hair care. I'm always searching for new things and trying new formulas, and I would like to share with people with the same hobbies as I do. 
+  </p>
+
+  <p>Also, I want to know other people's opinions, their own experiences and tips for a lovelly time at home. </p>
+
+  
+</div>
